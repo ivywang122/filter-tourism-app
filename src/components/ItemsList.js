@@ -44,7 +44,7 @@ class ItemsList extends Component{
   render() {
     // console.log(this.state.pageCount, this.props.pageCount)
     let { items, isLoading, isError } = this.state;
-    console.log(items)
+    // console.log(items)
     if(isLoading) {
       return (
         <div>Loading Items....</div>

@@ -180,7 +180,7 @@ class ItemsContainer extends Component {
 
   _getResultItems(pageCount = this.state.pageCount) {
     this.setState({ isLoading: true, isError: false });
-    // console.log('pageCount:', pageCount)
+    console.log('pageCount:', pageCount)
 
     this.props.getDataActions.getItemsTotalNum()
       .then(result => {
@@ -232,6 +232,7 @@ class ItemsContainer extends Component {
     if(filter.isTagsOn) {
       let path = process.env.PUBLIC_URL + '/page/' + pageCount;
       this.props.pageActions.routeToPath(path);
+      console.log(path)
       this.props.getDataActions.getFilterItemsTotalNum(filter)
         .then(result => {
           if (result) {
