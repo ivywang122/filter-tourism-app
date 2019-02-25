@@ -26,11 +26,11 @@ class RouterView extends Component {
             <Header />
           </div>
           <Switch>
-            <Route exact path={`/`} component={HomeContainer} />
-            <Route path={`/page/:pagecount`} render={props => (
+            <Route exact path={`/filter-tourism-app`} component={HomeContainer} />
+            <Route path={`filter-tourism-app/page/:pagecount`} render={props => (
               <HomeContainer {...props} />
             )} />
-            <Route path={`/info/:itemid`} component={InfoContainer} />
+            <Route path={`filter-tourism-app/info/:itemid`} component={InfoContainer} />
           </Switch>
         </div>
       </Router>
