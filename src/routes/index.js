@@ -20,7 +20,7 @@ class RouterView extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div>
           <div style={{ paddingBottom: '86px' }}>
             <Header />
