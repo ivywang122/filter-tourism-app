@@ -156,7 +156,7 @@ class ItemsContainer extends Component {
     // console.log(isPageurlNum)
     if (this._isMounted) {
       // if (path === '/') {
-      if (path === process.env.PUBLIC_URL + '/') {
+      if (path === '/filter-tourism-app' + '/') {
         this.setState({ isPageUrl: true });
         pageCount = 1;
   
@@ -230,7 +230,7 @@ class ItemsContainer extends Component {
     this.setState({ isLoading: true, isError: false });
     
     if(filter.isTagsOn) {
-      let path = process.env.PUBLIC_URL + '/page/' + pageCount;
+      let path = '/filter-tourism-app' + '/page/' + pageCount;
       console.log('path', path)
       this.props.pageActions.routeToPath(path);
       this.props.getDataActions.getFilterItemsTotalNum(filter)
@@ -277,7 +277,7 @@ class ItemsContainer extends Component {
 
       
     }else {
-      let path = process.env.PUBLIC_URL + '/';
+      let path = '/filter-tourism-app' + '/';
       this.props.pageActions.routeToPath(path);
       this.getResultItems(1)
     }
