@@ -1,7 +1,7 @@
 {
   "name": "filter-tourism-app",
   "version": "0.1.0",
-  "homepage": "http://ivywang122.github.filter.io.filter.com",
+  "homepage": "https://ivywang122.github.io/filter-tourism-app",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.1.3",
