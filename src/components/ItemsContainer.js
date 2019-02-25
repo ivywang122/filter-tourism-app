@@ -231,8 +231,8 @@ class ItemsContainer extends Component {
     
     if(filter.isTagsOn) {
       let path = process.env.PUBLIC_URL + '/page/' + pageCount;
+      console.log('path', path)
       this.props.pageActions.routeToPath(path);
-      console.log(path)
       this.props.getDataActions.getFilterItemsTotalNum(filter)
         .then(result => {
           if (result) {
