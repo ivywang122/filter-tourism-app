@@ -1,0 +1,54 @@
+html,body {
+    height: 100%;
+}
+html {
+    font-size: $global-font-size;
+    box-sizing: border-box;
+    letter-spacing: $global-letter-spacing;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $global-font-family;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $global-font-color;
+    background: $global-background;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+section, div {
+ box-sizing: border-box;   
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; 
+}
+
+a {
+    color: $global-font-color;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+button{
+    border: none;
+}
+
+input, textarea{
+    box-sizing: border-box;
+    letter-spacing: $global-letter-spacing;
+}
+
+
