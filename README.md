@@ -16,6 +16,11 @@
 
 ---
 
+[LIVE DEMO](https://ivywang122.github.io/filter-tourism-app/)
+
+- 路徑佈屬 github pages 尚有問題，待修正
+
+
 ## 實作：
 
 1. bootstrap 4 應用
