@@ -26,11 +26,11 @@ class RouterView extends Component {
             <Header />
           </div>
           <Switch>
-            <Route exact path={process.env.PUBLIC_URL+`/`} component={HomeContainer} />
-            <Route path={process.env.PUBLIC_URL+`/page/:pagecount`} render={props => (
+            <Route exact path={`/`} component={HomeContainer} />
+            <Route path={`/page/:pagecount`} render={props => (
               <HomeContainer {...props} />
             )} />
-            <Route path={process.env.PUBLIC_URL+`/info/:itemid`} component={InfoContainer} />
+            <Route path={`/info/:itemid`} component={InfoContainer} />
           </Switch>
         </div>
       </Router>
